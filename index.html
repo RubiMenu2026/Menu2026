@@ -1,10 +1,192 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url='MENÚ%20RUBÍ%20AFTER%20WORKS%20BAR.pdf'">
-    <title>Menú Rubí After Works Bar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubí After Works Bar</title>
+
+  <style>
+    :root {
+      --cream: #FAEFDE;
+      --navy: #304B68;
+      --red: #C73D50;
+      --line: #D9CBB8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--navy);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 560px;
+      background: var(--cream);
+      border-radius: 30px;
+      padding: 38px 26px 34px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 390px;
+      height: auto;
+      display: block;
+      margin: 0 auto 25px;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 25px 0 28px;
+    }
+
+    .heading {
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin: 0 0 12px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 26px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .button {
+      width: 100%;
+      min-height: 72px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 23px;
+      padding: 18px;
+      font-size: 17px;
+      letter-spacing: .3px;
+      transition: .2s ease;
+    }
+
+    .button-primary {
+      background: var(--navy);
+      color: var(--cream);
+      border: 1px solid var(--navy);
+    }
+
+    .button-outline {
+      background: transparent;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      opacity: .92;
+    }
+
+    .instagram {
+      margin-top: 4px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 26px 18px;
+        border-radius: 24px;
+      }
+
+      .logo {
+        max-width: 100%;
+      }
+
+      .heading {
+        font-size: 20px;
+      }
+
+      .subtitle {
+        font-size: 15px;
+      }
+
+      .button {
+        min-height: 66px;
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <main class="container">
+
+    <!-- LOGO -->
+    <img
+      src="logo-rubi.png"
+      alt="Rubí After Works Bar"
+      class="logo"
+    >
+
+    <div class="divider"></div>
+
+    <h1 class="heading">EXPLORE OUR MENU</h1>
+
+    <p class="subtitle">
+      Descubre nuestra carta · Discover our menu
+    </p>
+
+    <div class="buttons">
+
+      <!-- MENU ESPAÑOL -->
+      <a
+        href="menu-es.pdf"
+        target="_blank"
+        class="button button-primary"
+      >
+        MENÚ EN ESPAÑOL
+      </a>
+
+      <!-- MENU ENGLISH -->
+      <a
+        href="menu-en.pdf"
+        target="_blank"
+        class="button button-outline"
+      >
+        MENU IN ENGLISH
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a
+        href="https://www.instagram.com/rubiafterworksbar/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button button-outline instagram"
+      >
+        INSTAGRAM · @rubiafterworksbar
+      </a>
+
+    </div>
+
+  </main>
 </body>
 </html>
